@@ -1,101 +1,63 @@
-@font-face {
-    font-family: 'rosinha';
-    src: url('fonts/Roseberry.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    
-}
-@font-face {
-    font-family: 'gobold';
-    src: url('fonts/Gobold\ Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    
-    margin-left: 20px;
-    color: white;
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+header{
+  text-align: center;
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 5px;
+ }
 
-h1{
-    text-align: center;
-    font-family: 'rosinha';
-    font-size: 3em;
-    color: white;
-   
-}
+ body{
+  color: white;
+  background-image: url('images/Rectangle\ 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+ }
 
-h2{
-    font-size: 28px;
-}
-    
-
-
-h3{
-    font-family: 'gobold';
-    font-size: 22px;
-
+ div.box{
+  height: 250px;
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  align-items: center;
+  
 }
 
 img{
-    width: 125px;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: -6%;
+  top: 10%;
 }
 
-.container{
-    display: flex;
-    align-items: center;
+h2{
+  color: rgb(253, 251, 251);
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 15%;
+  left: 10%;
 }
 
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 252, 252);
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 11%;
 }
-
-.btn {
-    display: inline-block;
-    width: 140px;
-    height: 50px;
-    background: linear-gradient(to top, #6d1e31, #6d1e31, #6d1e31);
-    color: #fff;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-  
-  .btn span {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: top 0.5s;
-  }
-  
-  .btn-text-one {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-  
-  .btn-text-two {
-    position: absolute;
-    width: 100%;
-    top: 150%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-  
-  .btn:hover .btn-text-one {
-    top: -100%;
-  }
-  
-  .btn:hover .btn-text-two {
-    top: 50%;
-  }
-  
